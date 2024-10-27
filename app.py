@@ -3,6 +3,7 @@ import streamlit as st
 import base64
 from openai import OpenAI
 
+
 # Function to encode the image to base64
 def encode_image(image_file):
     return base64.b64encode(image_file.getvalue()).decode("utf-8")
@@ -26,7 +27,7 @@ st.markdown(
 )
 
 # Título y subtítulo
-st.title("Análisis de Imagen: 🤖🏞️")
+st.title("Análisis de Imagen 🤖🏞️")
 st.write("<h3 style='color: #FF4500;'>¡Bienvenido! Aquí puedes analizar tus imágenes.</h3>", unsafe_allow_html=True)
 
 # Barra lateral para instrucciones
